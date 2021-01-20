@@ -1,0 +1,32 @@
+{
+  "name": "trafo2/t2_captcha",
+  "description": "reCAPTCHAv2 + hCAPTCHA for Extbase forms",
+  "type": "typo3-cms-extension",
+  "homepage": "https://www.trafo2.de",
+  "license": "GPL-3.0-or-later",
+  "support": {
+    "source": "https://github.com/trafo2/t2_captcha",
+    "issues": "https://github.com/trafo2/t2_captcha/issues",
+    "docs": "https://docs.typo3.org/p/trafo2/t2_captcha/master/en-us/"
+  },
+  "authors": [
+    {
+      "name": "Trafo2 GmbH",
+      "email": "info@trafo2.de",
+      "homepage": "https://www.trafo2.de/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Trafo2\\T2Captcha\\": "Classes/"
+    }
+  },
+  "require": {
+    "php": ">=7.2.0",
+    "typo3/cms-core": ">=9.5,<10.5"
+  },
+  "keywords": [
+    "captcha", "recaptcha", "hcaptcha", "extbase"
+  ]
+}

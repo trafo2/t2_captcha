@@ -1,0 +1,12 @@
+# OS or IDE folders
+.DS_Store
+._*
+.idea/
+.settings/
+.project/
+Thumbs.db
+
+# File-Extensions to ignore
+*.diff
+*.log
+*.bak

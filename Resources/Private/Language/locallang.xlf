@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-01-20T12:00:00Z" product-name="t2_captcha">
+		<header/>
+		<body>
+			<trans-unit id="missing-typoscript" resname="missing-typoscript">
+				<source>Could not found any typoscript definition for t2_captcha.</source>
+			</trans-unit>
+			<trans-unit id="curl-error" resname="curl-error">
+				<source>An error occurred while accessing CAPTCHA verification service: %s</source>
+			</trans-unit>
+			<trans-unit id="empty-response" resname="empty-response">
+				<source>The response of the CAPTCHA verification service was empty.</source>
+			</trans-unit>
+			<trans-unit id="invalid-json" resname="invalid-json">
+				<source>The response of the CAPTCHA verification service did not contain valid JSON.</source>
+			</trans-unit>
+			<trans-unit id="missing-private-key" resname="missing-private-key">
+				<source>No private key provided. Please specify a private key in the typoscript definition.</source>
+			</trans-unit>
+			<trans-unit id="missing-response" resname="missing-response">
+				<source>Please verify as human by clicking the CAPTCHA.</source>
+			</trans-unit>
+			<trans-unit id="missing-input-secret" resname="missing-input-secret">
+				<source>The secret key is missing.</source>
+			</trans-unit>
+			<trans-unit id="invalid-input-secret" resname="invalid-input-secret">
+				<source>The secret key is invalid or malformed.</source>
+			</trans-unit>
+			<trans-unit id="missing-input-response" resname="missing-input-response">
+				<source>The response parameter (verification token) is missing.</source>
+			</trans-unit>
+			<trans-unit id="invalid-input-response" resname="invalid-input-response">
+				<source>The response parameter (verification token) is invalid or malformed.</source>
+			</trans-unit>
+			<trans-unit id="bad-request" resname="bad-request">
+				<source>The request is invalid or malformed.</source>
+			</trans-unit>
+			<trans-unit id="invalid-or-already-seen-response" resname="invalid-or-already-seen-response">
+				<source>The response parameter has already been checked, or has another issue.</source>
+			</trans-unit>
+			<trans-unit id="sitekey-secret-mismatch" resname="sitekey-secret-mismatch">
+				<source>The sitekey is not registered with the provided secret.</source>
+			</trans-unit>
+			<trans-unit id="timeout-or-duplicate" resname="timeout-or-duplicate">
+				<source>The response is no longer valid: either is too old or has been used previously.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

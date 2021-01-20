@@ -1,0 +1,21 @@
+.. ---------
+.. textroles
+.. ---------
+
+.. role:: html(code)
+.. role:: php(code)
+.. role:: bash(code)
+.. role:: typoscript(code)
+
+.. role:: ts(typoscript)
+   :class: typoscript
+
+.. role:: yaml(code)
+
+.. default-role:: code
+
+.. ---------
+.. highlight
+.. ---------
+
+.. highlight:: php
