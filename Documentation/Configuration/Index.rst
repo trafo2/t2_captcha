@@ -51,7 +51,7 @@ reCAPTCHAv2 checkbox
           xmlns:c="http://typo3.org/ns/Trafo2/T2Captcha/ViewHelpers"
           data-namespace-typo3-fluid="true">
         <f:form action="submit">
-            <c:reCaptchaV2.checkbox size="compact"/>
+            <c:reCaptcha.checkbox size="compact"/>
             <button type="submit">Go!</button>
         </f:form>
     </html>
@@ -68,7 +68,7 @@ expired-callback          The name of your callback function, executed when the 
 error-callback            The name of your callback function, executed when reCAPTCHA encounters an error (usually network connectivity) and cannot continue until connectivity is restored. If you specify a function here, you are responsible for informing the user that they should retry.     string
 ========================= ========================================================================================================================================================================================================================================================================= ===============
 
-reCAPTCHAv2 button
+reCAPTCHA button (invisible V2 / V3)
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
@@ -77,9 +77,9 @@ reCAPTCHAv2 button
           xmlns:c="http://typo3.org/ns/Trafo2/T2Captcha/ViewHelpers"
           data-namespace-typo3-fluid="true">
         <f:form action="submit">
-            <c:reCaptchaV2.button>
+            <c:reCaptcha.button>
                 Go!
-            </c:reCaptchaV2.button>
+            </c:reCaptcha.button>
         </f:form>
     </html>
 
@@ -95,7 +95,7 @@ callback                  The name of your callback function, executed when the 
 standard HTML attributes  Supports all standard attributes like id, class, title, etc.                                                                                              mixed
 ========================= ========================================================================================================================================================= ===============
 
-hCAPTCHAv2 checkbox
+hCAPTCHA checkbox
 ^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html

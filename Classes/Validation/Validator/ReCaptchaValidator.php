@@ -9,7 +9,9 @@ class ReCaptchaValidator extends \Trafo2\T2Captcha\Validation\AbstractValidator 
 	 * @var array
 	 */
 	protected $supportedOptions = [
-		'privateKey' => ['', 'The shared key between your site and reCAPTCHA.', 'string', false]
+		'privateKey' => ['', 'The shared key between your site and reCAPTCHA.', 'string', false],
+		'verifyHostname' => [false, 'This will verify the hostname given from reCAPTCHA response with the real hostname.', 'bool', false],
+		'minScore' => [0, 'Required minimum score to pass CAPTCHA.', 'double', false],
 	];
 
 	/**
@@ -31,6 +33,14 @@ class ReCaptchaValidator extends \Trafo2\T2Captcha\Validation\AbstractValidator 
 				];
 				$response = $this->verifyHttpRequest(self::VERIFY_URL, $data);
 				if ($response['success']) {
+					if ($this->options['verifyHostname'] && $response['hostname'] != $_SERVER['SERVER_NAME']) {
+						$this->addError($this->translate('invalid-hostname'), 0, [], 'reCAPTCHA');
+						return false;
+					}
+					if ($this->options['minScore'] > 0 && $this->options['minScore'] > $response['score']) {
+						$this->addError($this->translate('score-mismatch'), 0, [], 'reCAPTCHA');
+						return false;
+					}
 					return true;
 				}
 				foreach ($response['error-codes'] as $code => $error) {

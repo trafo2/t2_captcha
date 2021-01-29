@@ -2,7 +2,7 @@
 t2_captcha is an extension for the TYPO3 CMS to provide view helpers and validators for supporting reCAPTCHA and hCAPTCHA in Extbase forms.
 
 ## Features
-* ViewHelpers for reCAPTCHAv2 checkbox and button (invisibile)
+* ViewHelpers for reCAPTCHA checkbox and button (invisible v2 and v3)
 * ViewHelpers for hCAPTCHA checkbox and button (invisible)
 * Validator for reCAPTCHA
 * Validator for hCAPTCHA

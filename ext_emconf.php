@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'CAPTCHAs for Extbase forms',
-	'description' => 'reCAPTCHAv2 + hCAPTCHA for Extbase forms',
+	'description' => 'reCAPTCHA + hCAPTCHA for Extbase forms',
 	'category' => 'misc',
 	'version' => '1.0.0',
 	'state' => 'stable',

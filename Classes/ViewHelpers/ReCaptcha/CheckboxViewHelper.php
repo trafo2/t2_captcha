@@ -1,10 +1,8 @@
 <?php
 
-namespace Trafo2\T2Captcha\ViewHelpers\ReCaptchaV2;
+namespace Trafo2\T2Captcha\ViewHelpers\ReCaptcha;
 
-class CheckboxViewHelper extends \Trafo2\T2Captcha\ViewHelpers\CaptchaViewHelperAbstract {
-	const RECAPTCHA_JAVASCRIPT_LIBRARY_URL = 'https://www.google.com/recaptcha/api.js';
-
+class CheckboxViewHelper extends ViewHelperAbstract {
 	/**
 	 * @var string
 	 */
@@ -49,13 +47,5 @@ class CheckboxViewHelper extends \Trafo2\T2Captcha\ViewHelpers\CaptchaViewHelper
 		$this->tag->forceClosingTag(true);
 		$this->includeJavaScript(self::RECAPTCHA_JAVASCRIPT_LIBRARY_URL);
 		return $this->tag->render();
-	}
-
-	protected function getPublicKeyFromTypoScript(): string {
-		$typoScript = $this->getTypoScript();
-		if (empty($typoScript['recaptcha.']['publicKey'])) {
-			throw new \Exception('No public key in typoscript definition found [plugin.tx_t2captcha.recaptcha.publicKey].');
-		}
-		return $typoScript['recaptcha.']['publicKey'];
 	}
 }

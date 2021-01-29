@@ -45,6 +45,12 @@
 			<trans-unit id="timeout-or-duplicate" resname="timeout-or-duplicate">
 				<source>The response is no longer valid: either is too old or has been used previously.</source>
 			</trans-unit>
+			<trans-unit id="invalid-hostname" resname="invalid-hostname">
+				<source>The hostname could not be verified.</source>
+			</trans-unit>
+			<trans-unit id="score-mismatch" resname="score-mismatch">
+				<source>You have been identified as a bot. Please try again.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
