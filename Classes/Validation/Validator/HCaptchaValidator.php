@@ -40,7 +40,7 @@ class HCaptchaValidator extends \Trafo2\T2Captcha\Validation\AbstractValidator {
 				$this->addError($e->getMessage(), $e->getCode(), [], 'hCAPTCHA');
 			}
 		} else {
-			$this->addError('missing-response', 0, [], 'hCAPTCHA');
+			$this->addError($this->translate('missing-response'), 0, [], 'hCAPTCHA');
 		}
 		return false;
 	}
