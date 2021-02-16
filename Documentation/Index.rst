@@ -57,3 +57,4 @@ Table of Contents
     Introduction/Index
     Installation/Index
     Configuration/Index
+    Usage/Index
