@@ -26,6 +26,11 @@
     "php": ">=7.2.0",
     "typo3/cms-core": ">=9.5,<10.5"
   },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t2_captcha"
+    }
+  },
   "keywords": [
     "captcha", "recaptcha", "hcaptcha", "extbase"
   ]
